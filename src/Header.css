@@ -1,0 +1,199 @@
+.main-wrapper {
+    min-height: calc(100vh - 405px);
+    z-index: 1;
+    position: relative;
+}
+header.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    padding: 33px 0;
+    z-index: 99;
+    transition: all 0.5s ease;
+    background:red;
+    background: linear-gradient(#152349 0%, rgba(0, 0, 0, 0) 100%);
+}
+header.header.fixed {
+    background: rgba(21, 35, 73, 0.85);
+    padding: 15px 0;
+    box-shadow: 0 0 30px 0 rgba(168, 254, 48, 0.2);
+} 
+header.header.scrolling_down {
+    top: -150px;
+    transition: all 0.2s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 1735px;
+    padding-left: 41px;
+    padding-right: 41px;
+    position: relative;
+    float: none;
+}
+.main-header {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    width: 7.5%;
+    margin-right: 3.1%;
+    
+}
+header .logo > a {
+    display: block;
+    width: 100%;
+    line-height: 0;
+}
+header .main-menu {
+    width: 45%;
+    margin-right: 2.2%;
+    margin-top: 24px;
+}
+.main-menu .menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-menu .menu li {
+    position: relative;
+    margin-right: 4%;
+}
+
+.main-menu .menu li:last-child {
+    margin-right: 0;
+}
+.main-menu .menu li a {
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+    position: relative;
+    padding-bottom: 40px;
+    display: block;
+}
+
+.main-menu .menu li .active {
+    color: var(--green);
+}
+
+.main-menu .menu li .active::before {
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 56px;
+    height: 30px;
+    background: url(./img/active-menu.png) no-repeat 0 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-menu .menu li a::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    width: 56px;
+    height: 30px;
+    background: url(./img/active-menu.png) no-repeat 0 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+.main-menu .menu li.active a:before,
+.main-menu .menu li a:hover:before{
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+.main-menu .menu li.active a,
+.main-menu .menu li a:hover{
+    color: var(--green);
+}
+
+.header-right {
+    max-width: 42.1%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.header-search {
+    width: 39%;
+    position: relative;
+    margin-right: 2.5%;
+    margin-top: 12px;
+}
+.header-search .search-box {
+    position: relative;
+    width: 100%;
+}
+.header-search .search-box input {
+    width: 100%;
+    height: 43px;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid var(--green);
+    backdrop-filter: blur(30px);
+    --webkit-backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 0 55px 0 15px;
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    color:white;
+}
+.header-search .search-box input:hover,
+.header-search .search-box input:focus {
+    box-shadow: 0 0 15px 0px var(--green);
+}
+.header-search .search-box .MuiSvgIcon-root {
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    font-size: 30px;
+    color:white;
+}
+
+
+
+.header .login-regis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.header .login-regis > a.btn:first-child {
+    margin-right: 15px;
+}
+.header .login-regis > a.btn {
+    margin: 0;
+    height: 43px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .login-regis > a.btn:hover{
+    box-shadow: 0px 0px 6px var(--green);
+}
+
+.show-login .header-right .login-regis {
+    display: flex;
+}
+.show-login .header-right .notification,
+.show-login .header-right .my-account {
+    display: none;
+}

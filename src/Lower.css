@@ -1,0 +1,94 @@
+.lower{
+    position: relative;
+    overflow: hidden;
+}
+.lower .DS{
+    position: relative;
+    display: flex;
+}
+.download {
+    position: relative;
+    margin: 100px 120px;
+    width: 660px;
+}
+.flex {
+    display: flex;
+}
+.flex p{
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 24px;
+    text-align: left;
+    color: var(--green);
+    line-height: 100%;
+    letter-spacing: 0.6px;
+    margin-top: 1%;
+}
+.download .socials {
+    position: relative;
+    margin-left:auto;
+    width:200px;
+    
+}
+
+.download .left{
+    position: absolute;
+    bottom: -120px;
+    left: -130px;
+}
+.download .logo{
+    cursor: pointer;
+}
+.flex img {
+    position: absolute;
+    right: 170px;
+}
+.flex img:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.download .apple:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.socials .right {
+    position: absolute;
+    right: -15px;
+    top:50px;
+    height: 150px;
+}
+.socials .Sicon {
+    position: absolute;
+    right: 45px;
+    top:260px;
+    cursor: pointer;
+}
+
+.socials p{
+    position: absolute;
+    right: 40px;
+    top:340px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #bd202c;
+}
+.terms {
+    display: flex;
+    flex-wrap: wrap;
+}
+.terms li {
+    margin: 10px 10px;
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--green);
+    cursor: pointer;
+}
+.terms li:hover{
+    color: white;
+    transition: all 0.5s ease 0s;
+}
+
+

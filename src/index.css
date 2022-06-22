@@ -1,13 +1,142 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+:root {
+    --green: rgb(168, 254, 48);
+    --Purple: #111C3B;
+    --main-bg: #111C3B;
+    --button-bg: rgb(23, 37, 71);
+    --black: #000;
+    --white: #fff;
 }
+html body {
+  background-color: var(--main-bg);
+  font-family: 'Water Brush', cursive;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+
+a,div a:hover, div a:active, div a:focus, button {
+  text-decoration: none;
+  -webkit-transition:all 0.5s ease 0s;
+  -moz-transition:all 0.5s ease 0s;
+  -ms-transition:all 0.5s ease 0s;
+  -o-transition:all 0.5s ease 0s;
+  transition:all 0.5s ease 0s;
+}
+*::after, *::before, * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+ul, ul li, ol, li {list-style: outside none none;font-family: 'SF Pro Display'; color: var(--white);}
+body ul {margin:0;padding:0;}
+
+body a {
+  outline: none;
+  color: var(--white);
+}
+body a:hover {
+  color: var(--green);
+}
+body .clearfix{
+  height:auto;
+}
+*{
+  outline:none!important;
+}
+*{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6{
+  font-family: 'SF Pro Display';
+  line-height:120%;
+  color:var(--white);
+  font-weight: bold;
+  margin:0 0 15px;
+}
+body h1 { font-size: 42px;}
+body h2 { font-size: 38px;}
+body h3 { font-size: 32px;}
+body h4 { font-size: 28px;}
+body h5 { font-size: 24px;}
+body h6 { font-size: 18px;}
+body h1:last-child,
+body h2:last-child,
+body h3:last-child,
+body h4:last-child,
+body h5:last-child,
+body h6:last-child{
+  margin-bottom:0;
+}
+
+img {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height:auto;
+}
+body p{
+  color: var(--white);
+  font-family: 'SF Pro Display';
+  font-size:15px;
+  line-height: 140%;
+  margin: 0 0 15px;
+  padding: 0;
+}
+.btn,
+button {
+    display: inline-block;
+    border: 1px solid var(--green);
+    padding: 18px 55px;
+    border-radius: 50px;
+    text-decoration: none;
+    background: var(--Purple);
+    color: var(--white);
+    line-height: 100%;
+    cursor: pointer;
+    font-family: 'SF Pro Display';
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 14px -4px rgba(168, 254, 48,0.6);
+    margin: 15px 0;
+    font-weight: 500;
+}
+.btn:hover,
+button:hover {
+    background: var(--green);
+    color: var(--Purple);
+}
+
+
+[data-loaded="true"] {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+@keyframes fade {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+

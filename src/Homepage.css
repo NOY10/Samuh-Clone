@@ -1,0 +1,61 @@
+.homepage{
+    border: 1px solid black;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.titdiv {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titdiv >  .add{
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    height: 37px;
+    width: 70px;
+    border-radius: 21px;
+    background: transparent;
+    margin-right: 30px;
+    box-sizing: border-box;
+}
+
+.add > button {
+    padding: 20px 35px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border:none;
+    box-shadow: none;
+}
+
+.add:hover {
+    background: var(--green);
+    color: var(--Purple);
+    transition: all 0.5s ease;
+}
+
+.add:hover .MuiSvgIcon-root{
+    color: black;
+    transition: all 0.5s ease;
+}
+.add > .MuiSvgIcon-root{
+    position: relative;
+    color: #fff;
+    right: 65%;
+}
+
+
+.title {
+    margin-left: 26px;
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 12px;
+    color: var(--green);
+    letter-spacing: 1px;
+}
+
+
+  

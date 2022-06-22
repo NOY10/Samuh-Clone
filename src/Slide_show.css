@@ -1,0 +1,85 @@
+
+.nextandpre{
+    position: absolute;
+    height:120px;
+    width: 120px;
+    margin-right: auto;
+    margin-top: 25px;
+    right: 13px;
+    top: 78%;
+    color: white;
+}
+.nextandpre > .next, .previous{
+   cursor: pointer;
+
+}
+
+.nextbtn, .prebtn{
+    background: none;
+    border: none;
+    padding: 0 !important;
+    box-shadow: none;
+    font-weight: normal;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+
+.nextbtn:hover , .prebtn:hover{
+    background: none;
+    border: none;
+    padding: 0 !important;
+    box-shadow: none;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.next .MuiSvgIcon-root{
+    transition: all 0.5s ease;
+    margin-left: 4px;
+    
+}
+
+.next:hover .MuiSvgIcon-root{
+    left: 30%;
+    transform: translateX(30%);
+    transition: all 0.5s ease;
+}
+.top{
+    position: relative;
+    width: 100%;
+    padding-top: 0;
+    height: 100vh;
+    transition: all 0.1s ease-in;
+    
+}
+
+.top.slide_next {
+    left: 30%;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+}
+
+
+.top.slide_pre {
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+}
+
+/* .top.top{
+    transition: all 0.1s ease-in;
+} */
+.previous .MuiSvgIcon-root{
+    transition: all 0.5s ease;
+    margin-right: 4px;
+}
+
+.previous:hover .MuiSvgIcon-root{
+    left: 30%;
+    transform: translateX(-30%);
+    transition: all 0.5s ease;
+}
